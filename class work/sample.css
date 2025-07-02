@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.outline {
+  background: white;
+  border: 1px solid black;
+}
+
+.btn.fill {
+  background: #0057ff;
+  border: none;
+  color: white;
+}
+.btn.fill:hover {
+  background: #0045cc;
+}
+
+.social-bar {
+  position: fixed;
+  top: 35%;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  z-index: 100;
+}
+.social-bar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.article-header .category {
+  color: #0057ff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.article-header h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.article-header .author {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.article-header .links a {
+  color: #0057ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 400px;
+}
